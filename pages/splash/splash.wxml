@@ -1,0 +1,4 @@
+<!--splash.wxml-->
+<view>
+    <image class="img-fill" mode="{{mode}}" src="{{src}}"></image>
+</view>

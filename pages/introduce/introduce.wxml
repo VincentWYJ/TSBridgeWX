@@ -1,0 +1,12 @@
+<!--introduce.wxml-->
+<button class="btn-float" bindtap="btnGotoIndex">{{btnText}}</button>
+<swiper class="swiper-top" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image  class="img-top" mode="{{mode}}" src="{{item}}"/>
+        </swiper-item>
+    </block>
+</swiper>
+
+
+

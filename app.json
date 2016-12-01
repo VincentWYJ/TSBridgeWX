@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/bulletin/bulletin",
+    "pages/splash/splash",
+    "pages/introduce/introduce",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#66ffff",
+    "navigationBarTitleText": "全局标题",
+    "navigationBarTextStyle":"black",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh": "true",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#00ff00",
+    "backgroundColor": "#eeeeee",
+    "borderStyle": "black",
+    "list": [{
+      "text": "公告",
+      "pagePath": "pages/bulletin/bulletin",
+      "iconPath": "images/tab_home.png",
+      "selectedIconPath": "images/tab_home.png"
+    }, {
+      "text": "作业",
+      "pagePath": "pages/homework/homework",
+      "iconPath": "images/tab_msg.png",
+      "selectedIconPath": "images/tab_msg.png"
+    }, {
+      "text": "课表",
+      "pagePath": "pages/schedule/schedule",
+      "iconPath": "images/tab_discover.png",
+      "selectedIconPath": "images/tab_discover.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/mine/mine",
+      "iconPath": "images/tab_mine.png",
+      "selectedIconPath": "images/tab_mine.png"
+    }]
+  }
+}
+

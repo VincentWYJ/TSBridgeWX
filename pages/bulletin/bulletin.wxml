@@ -1,0 +1,24 @@
+<!--bulletin.wxml-->
+<loading hidden="{{loadingHidden}}">{{loadingText}}</loading>
+<scroll-view class="scroll-view" scroll-y="true" bindscrolltoupper="loadingNewBulletin" bindscrolltolower="loadingOldBulletin">
+  <!-- 如果不讲block包在view中，达不到正常效果？ -->
+  <view>
+    <block wx:for-items="{{bulletins}}">
+      <view class="container">
+        <view  class="bulletin">
+          <view class="userinfo">
+            <image bindtap="loadingNewBulletin" class="userinfo-img" src="{{item.avatarUrl}}" background-size="cover"></image>
+            <view class="bulletin">
+              <text class="userinfo-nickname">{{item.nickName}}</text>
+              <text class="userinfo-time">{{item.time}}</text>
+            </view>
+          </view>
+          <view class="content">
+            <text>{{content[(index+indexC)%3]}}</text>
+          </view>
+        </view>
+        <view class="line"></view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
